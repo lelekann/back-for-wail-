@@ -16,7 +16,7 @@ export class UsersResolver {
     return this.usersService.create(createUserInput);
   }
 
-  @Query(() => [User], { name: 'users' })
+  @Query(() => [User], { name: 'getAllUsers' })
   @UseGuards(new AuthGuard(new JwtService))
   findAll() {
     return this.usersService.findAll();

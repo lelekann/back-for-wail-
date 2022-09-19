@@ -26,8 +26,8 @@ type Mutation {
 }
 
 type Query {
+  getAllUsers: [User!]!
   user(username: String!): User!
-  users: [User!]!
 }
 
 input UpdateUserInput {
