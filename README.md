@@ -1,3 +1,15 @@
+During the task, I tried not to use third-party libraries. I used the capabilities of nestjs and apollo.
+
+If I had more time, I would have improved the frontend part(the Login component contains too much logic that needs to be taken out), and also figured out better with the JWT token. Currently jwtService.decode() does not return an error even if token is null :(
+
+Implemented features:
+1. Create a new user
+2.  Added authorization with jwt
+3. To login(if login is success - you receive JWT and navigate to the user list)
+4. If you are logged in as admin - you see a list of users with id, username and role
+5. If you are not an admin - you see a list of users (only username)
+
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
